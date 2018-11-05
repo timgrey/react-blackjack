@@ -61,6 +61,8 @@ export default class getCards extends Component {
 
     stand(prevState) {
         prevState.dealerCards[1].flipped = true
+        prevState.dealersCardsValue += Number(prevState.dealerCards[1].value)
+
 
         if (prevState.dealersCardsValue === 21) {
 
@@ -221,7 +223,7 @@ export default class getCards extends Component {
             if (prevState.dealerCards[prevState.dealerCards.length - 1].value === "11") {
                 prevState.dealerAces++
             }
-            prevState.dealersCardsValue += Number(prevState.dealerCards[prevState.dealerCards.length - 1].value)
+            prevState.dealersCardsValue = Number(prevState.dealerCards[0].value)
 
         }
         prevState.dealerCards[0].flipped = true;
