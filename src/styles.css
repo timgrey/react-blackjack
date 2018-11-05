@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.home-bg {
+    background: url("./images/landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    font-family: 'Pacifico', cursive;
+    color: whitesmoke;
+    position: absolute;
+    z-index: 3;
+}
+
+body {
+    background: url("./images/felt-bg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    background: url("./images/blackjack-table.svg");
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+    background-position: center;
+    width: 1200px;
+    height: 700px;
+
+}
+
+.game-board {
+    width: 100%;
+    height: 577px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dealer-section {
+    width: 100%;
+    height: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.message {
+    width: 35%;
+    height: 21%;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #111;
+    margin-top: 20px;
+
+}
+
+.message p {
+    border-radius: 10pt;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.705)
+}
+
+.player-section {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.counter {
+    color: yellow;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.dealer-section .counter {
+    margin-bottom: 35px;
+}
+
+.buttons {
+    width: auto;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.bet-buttons {
+    width: auto;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+button {
+    font-size: 20pt;
+    border-radius: 100%;
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.bet button {
+    font-size: 16pt;
+    font-weight: bold;
+    height: 70px;
+    width: 70px;
+}
+
+.bet button:nth-child(1) {
+    background: rgb(176, 255, 182);
+    transform: translate(-114%, -215%);
+}
+
+.bet button:nth-child(2) {
+    background: rgb(255, 80, 80);
+    transform: translate(-148%, -140%);
+}
+
+.bet button:nth-child(3) {
+    background: rgb(0, 162, 255);
+    transform: translate(-168%, -80%);
+}
+
+.bet button:nth-child(4) {
+    background: rgb(245, 245, 163);
+    transform: translate(-180%, -40%);
+}
+
+.bet button:nth-child(5) {
+    background: rgb(167, 122, 226);
+    transform: translate(-190%, -10%);
+}
+
+.deal button {
+    border: 3px solid rgb(43, 43, 43);
+    background: rgb(236, 236, 236);
+    color: red;
+    font-weight: bold;
+    transform: translate(-430%, 0%);
+}
+
+.money {
+    width: 95%;
+    font-size: 60pt;
+    color: rgb(250, 250, 111);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wallet {
+    transform: translate(0%, -86%);
+}
+
+.currentBet {
+    font-size: 22pt;
+    transform: translate(29%, -35%);
+}
+
+
+div img {
+    height: 6rem;
+    width: auto;
+    margin: 5px;
+}
+
+
+
+
+
+@media (max-width:1100px) {
+    .app {
+        background-size: 700px auto;
+        width: 700px;
+        height: 500px;
+    }
+
+    .game-board {
+        width: 700px;
+    }
+    .dealer-section {
+        height: 13%
+    }
+    .message {
+        font-size: 18pt;
+        height: 10%;
+    }
+    .counter {
+        color: yellow;
+        font-weight: bold;
+        font-size: 18pt;
+    }
+
+    div img {
+        height: 50px;
+        width:auto;
+    }
+    button {
+        font-size: 15pt;
+        border-radius: 100%;
+        height: 60px;
+        width: 60px;
+        margin: 10px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .bet button {
+        font-size: 11pt;
+        font-weight: bold;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .bet button:nth-child(1) {
+        background: rgb(176, 255, 182);
+        transform: translate(-160%, -695%);
+    }
+    
+    .bet button:nth-child(2) {
+        background: rgb(255, 80, 80);
+        transform: translate(-218%, -600%);
+    }
+    
+    .bet button:nth-child(3) {
+        background: rgb(0, 162, 255);
+        transform: translate(-258%, -520%);
+    }
+    
+    .bet button:nth-child(4) {
+        background: rgb(245, 245, 163);
+        transform: translate(-280%, -460%);
+    }
+    
+    .bet button:nth-child(5) {
+        background: rgb(167, 122, 226);
+        transform: translate(-290%, -420%);
+    }
+    
+    .deal button {
+        border: 2px solid rgb(43, 43, 43);
+        background: rgb(236, 236, 236);
+        color: red;
+        font-weight: bold;
+        transform: translate(-405%, -310%);
+    }
+    .money {
+        width: 95%;
+        font-size: 45pt;
+        
+    }
+    
+    .wallet {
+        transform: translate(0%, -335%);
+    }
+    
+    .currentBet {
+        font-size: 18pt;
+        transform: translate(22%, -285%);
+    }
+    .stand, .hit{
+        font-size: 11pt;
+        font-weight: bold;
+        transform: translate(0%, -330%);
+    }
+}
+
+@media (max-width:700px) {
+    body .app {
+        height: 750px;
+        width: 700px;
+        transform: rotate(90deg);
+        transform-origin: 330px 420px;
+    }
+
+    .game-board {
+        transform: translate(0%, 22%);
+    }
+
+    .bet-buttons {
+        transform: translate(0%, 170%);
+    }
+
+    .buttons {
+        transform: translate(0%, 170%);
+    }
+
+    .money {
+        transform: translate(0%, 140%);
+    }
+}
