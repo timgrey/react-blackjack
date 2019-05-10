@@ -4,7 +4,7 @@
 }
 
 .home-bg {
-    background: url("./images/landscape.jpg");
+    background: url("./images/felt-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,6 +18,10 @@
     color: whitesmoke;
     position: absolute;
     z-index: 3;
+}
+
+.home-bg p {
+    transform: translateX(-200px)
 }
 
 body {
@@ -127,12 +131,12 @@ button {
 }
 
 .bet button:nth-child(1) {
-    background: rgb(176, 255, 182);
+    background: rgb(175, 255, 182);
     transform: translate(-114%, -215%);
 }
 
 .bet button:nth-child(2) {
-    background: rgb(255, 80, 80);
+    background: rgb(255, 79, 80);
     transform: translate(-148%, -140%);
 }
 

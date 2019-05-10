@@ -3,9 +3,9 @@ import DisplayCards from "./DisplayCards"
 import axios from "axios";
 import Home from "./Home"
 
-const shuffleDeckUrl = `https://vschool-cors.herokuapp.com?url=https://deckofcardsapi.com/api/deck/0xbbumymhgwo/shuffle/
+const shuffleDeckUrl = `https://deckofcardsapi.com/api/deck/o2xn4pr871np/shuffle/
 `
-const newDeckUrl = `https://vschool-cors.herokuapp.com?url=https://deckofcardsapi.com/api/deck/0xbbumymhgwo/draw/?count=416`
+const newDeckUrl = `https://deckofcardsapi.com/api/deck/o2xn4pr871np/draw/?count=416`
 
 
 export default class getCards extends Component {
