@@ -4,7 +4,7 @@
 }
 
 .home-bg {
-    background: url("./images/landscape.jpg");
+    background: url("./images/felt-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,6 +18,10 @@
     color: whitesmoke;
     position: absolute;
     z-index: 3;
+}
+
+.home-bg p {
+    transform: translateX(-200px)
 }
 
 body {
