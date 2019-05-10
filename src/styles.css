@@ -132,7 +132,7 @@ button {
 }
 
 .bet button:nth-child(2) {
-    background: rgb(255, 80, 80);
+    background: rgb(255, 79, 80);
     transform: translate(-148%, -140%);
 }
 
